@@ -30,7 +30,7 @@ export default function SignIn() {
                     />
 
                 <TouchableOpacity style={styles.button}
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.navigate('AddDebitScreen')}
                 >
                     <Text style={styles.buttonText}>Acessar</Text>
                 </TouchableOpacity>
@@ -83,9 +83,10 @@ const styles = StyleSheet.create({
         fontSize: 16
     },
     button: {
+        
         backgroundColor: '#38a69d',
         width: '100%',
-        borderRadius: 25,
+        borderRadius: 6,
         paddingVertical: 8,
         marginTop: 14,
         justifyContent: 'center',

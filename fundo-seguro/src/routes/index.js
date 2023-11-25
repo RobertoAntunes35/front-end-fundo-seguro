@@ -3,6 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Welcome from '../pages/welcome'
 import SignIn from '../pages/SignIn'
 import Home from '../pages/Home';
+import AddDebitScreen from '../components/addDebit';
 const Stack = createNativeStackNavigator();
 
 export default function Routes() {
@@ -23,6 +24,11 @@ export default function Routes() {
             <Stack.Screen
             name="Home"
             component={Home}
+            options={{headerShown:false}}
+            />
+            <Stack.Screen
+            name="AddDebitScreen"
+            component={AddDebitScreen}
             options={{headerShown:false}}
             />
         </Stack.Navigator>
